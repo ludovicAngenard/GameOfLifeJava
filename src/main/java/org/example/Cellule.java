@@ -7,10 +7,19 @@ public class Cellule {
     static String DEAD_CELLULE = "-";
 
     public void Cellule(){}
+
+    /**
+     * @param isInLife
+     */
     public void Cellule(boolean isInLife){
         this.isInLife = isInLife;
     }
 
+    /**
+     * @param square
+     * @param i
+     * @param j
+     */
     public void checkCell(String[][] square, int i, int j){
         this.positiveNeighbor = 0;
         for(var x = Math.max(0, i-1); x <= Math.min(i+1, Game.WIDTH_AND_HEIGHT_SQUARE - 1); x++) {

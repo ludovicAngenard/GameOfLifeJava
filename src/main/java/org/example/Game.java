@@ -21,10 +21,20 @@ public class Game {
             this.count--;
         }
     }
+
+    /**
+     * @param size
+     * @return
+     */
     public String[][] createSquare(int size){
         String [][] arraySquare = new String[size][size];
         return arraySquare;
     }
+
+    /**
+     * @param square
+     * @return
+     */
     public String[][] fillSquare(String[][] square){
         for (int i = 0; i < square.length; i++){
             for (int j = 0; j< square[i].length; j++){
@@ -40,6 +50,9 @@ public class Game {
         return square;
     }
 
+    /**
+     * @param square
+     */
     public void checkSquare(String[][] square){
         for (int i = 0; i < square.length; i++){
             for (int j = 0; j < square[i].length; j++){

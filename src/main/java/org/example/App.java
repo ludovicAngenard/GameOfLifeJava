@@ -1,10 +1,6 @@
 package org.example;
 import org.example.Game;
 
-/**
- * Hello world!
- *
- */
 public class App 
 {
 
